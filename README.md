@@ -2,7 +2,7 @@
 
 <img src="https://github.com/solimanhossain/reactjs-tutorials-reactive-accelerator/blob/main/preview/weather-dashboard.png?raw=true" alt="weather-dashboard" width="250" align="left"/>
 
-### weather-dashboard | [Code](https://github.com/solimanhossain/reactjs-tutorials-reactive-accelerator/tree/main/weather-dashboard) | [Preview](https://soliman-weather-dashboard.vercel.app/) |
+### weather-dashboard | [Code](https://github.com/solimanhossain/reactjs-tutorials-reactive-accelerator/tree/main/weather-dashboard) | [Preview](https://weather-dashboard-soliman.pages.dev/) |
 
 ```
 cd weather-dashboard
