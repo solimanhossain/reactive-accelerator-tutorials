@@ -1,5 +1,7 @@
 import { useState } from "react";
 import BoxButton from "./BoxButton";
+import CrossSound from "../assets/sound/cross.mp3";
+import CircleSound from "../assets/sound/circle.mp3";
 import resultCalculate from "../utils/resultCalculate";
 
 export default function TicTacToe() {
@@ -13,6 +15,7 @@ export default function TicTacToe() {
         if (historyBox[i] || result) return;
         const newboxValues = historyBox.slice();
         newboxValues[i] = xOrY ? "X" : "O";
+        xOrY ? new Audio(CrossSound).play() : new Audio(CircleSound).play();
         setboxValues([...historyBox, newboxValues]);
         setxOrY(!xOrY);
     }

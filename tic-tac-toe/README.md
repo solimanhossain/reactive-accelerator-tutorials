@@ -1,8 +1,12 @@
 # Tic Tac Toe
 
-This is tic tac toe game.
+This is tic tac toe game. Run app following [instructions](https://github.com/solimanhossain/reactjs-tutorials-reactive-accelerator).
 
-Currently, two official plugins are available:
+## Khow More About
 
--   [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
--   [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   [More](https://react.dev/learn/tutorial-tic-tac-toe)
+-   [Vite](https://vitejs.dev/guide/)
+-   [React](https://react.dev/learn)
+-   [tailwind](https://tailwindcss.com/docs)
+
+---
