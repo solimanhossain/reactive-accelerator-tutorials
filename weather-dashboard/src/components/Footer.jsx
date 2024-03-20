@@ -3,7 +3,7 @@ export default function Footerbar() {
         <footer className="p-2 mt-2 text-gray-200 ">
             <div className="sm:flex sm:items-center sm:justify-between">
                 <a
-                    href="#"
+                    href="https://openweathermap.org/current"
                     className="flex items-center space-x-3 rtl:space-x-reverse"
                 >
                     <img src="weather.svg" className="h-6" alt="Logo" />
@@ -26,14 +26,14 @@ export default function Footerbar() {
             </div>
             <hr className="my-4 border-gray-400" />
             <span className="block text-sm sm:text-center">
-                © 2024{" "}
+                {" © 2024 "}
                 <a
                     href="https://solimanhossain.github.io/"
                     className="hover:underline"
                 >
                     Soliman Hossain
                 </a>
-                . All Rights Reserved.
+                {" | All Rights Reserved."}
             </span>
         </footer>
     );

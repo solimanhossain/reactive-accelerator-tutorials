@@ -9,6 +9,7 @@ export default function Navbar() {
     function handleSearch(e) {
         e.preventDefault();
         setCity(searchWord);
+        setSearchWord("");
     }
 
     return (
