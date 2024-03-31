@@ -6,6 +6,7 @@ import resultCalculate from "../utils/resultCalculate";
 
 export default function TicTacToe() {
     const [boxValues, setboxValues] = useState([Array(9).fill(null)]);
+    const [draw, setDraw] = useState(true);
     const [xOrY, setxOrY] = useState(true);
 
     let historyBox = boxValues[boxValues.length - 1];
@@ -16,6 +17,7 @@ export default function TicTacToe() {
         const newboxValues = historyBox.slice();
         newboxValues[i] = xOrY ? "X" : "O";
         xOrY ? new Audio(CrossSound).play() : new Audio(CircleSound).play();
+        setDraw(newboxValues.some((value) => value === null));
         setboxValues([...historyBox, newboxValues]);
         setxOrY(!xOrY);
     }
@@ -25,7 +27,9 @@ export default function TicTacToe() {
             <h2 className="text-4xl font-mono font-bold p-4 text-violet-950">
                 {result
                     ? `${result} is the winner!`
-                    : `${xOrY ? "X" : "O"} - player turn.`}
+                    : draw
+                    ? `Player ${xOrY ? "X" : "O"} turn `
+                    : "Match Draw!"}
             </h2>
             <div className="flex">
                 <BoxButton
